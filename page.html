@@ -8,10 +8,20 @@
   gtag('js', new Date());
 
   gtag('config', 'G-0WNVH2BFTK');
+
+  function send(){
+    gtag("event", "自己定義的事件名稱", {
+    	"value_articletitle": "GA INTRO"
+    	"自訂參數名稱一": "對應參數一的資料",
+    	"自訂參數名稱二": "對應參數二的資料",
+    });
+    alert("做本來要做的事情")
+  }
 </script>
   <title>My Second Page</title>  
 </head>
   <body>
     My second Page._LizLiu <a href="home.html">Back Home</a>.
+    <button onclick=""send()>點我</button>
   </body>
 </html>
